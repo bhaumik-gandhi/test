@@ -1,0 +1,23 @@
+{
+  "name": "jms",
+  "version": "1",
+  "authors": [
+    "bhaumik_gandhi <bhaumik.gandhi@actonate.com>"
+  ],
+  "main": "main.js",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}

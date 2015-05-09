@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="EMP">
+<head>
+	<title>Employee</title>
+
+	<script type="text/javascript" src = "bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+
+	<!-- employee Module dependencies -->
+	<script type="text/javascript" src="app/employee/emp.config.js"></script>
+	<script type="text/javascript" src="app/employee/service.js"></script>
+	<script type="text/javascript" src="app/employee/emp.ctrl.js"></script>
+
+	<!-- EMP module dependencies-->
+	<script type="text/javascript" src = "app/main.js"></script>	
+</head>
+<body>
+<a ui-sref="employee"><h1>Go</h1></a>
+	<div ui-view=""></div> <!-- Container for Views -->
+</body>
+</html>

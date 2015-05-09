@@ -1,0 +1,15 @@
+<h2>Employee Module</h2>
+<div ui-view>
+	<h3>Employees</h3>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		<tr ng-repeat="detail in emp_details">
+			<td ng-bind="detail.name"></td>
+			<td ng-bind="detail.age"></td>
+		</tr>
+	</table>
+
+</div>
