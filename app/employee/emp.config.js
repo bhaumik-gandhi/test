@@ -4,10 +4,14 @@
 	app.config(function($stateProvider){
 		$stateProvider.
 			state('employee', {
-				abstract: false,
+				abstract: true,
+				templateUrl: "app/employee/empbase.tpl.html"			
+			}).
+			state('employee.list', {
+				url: "/employee/list",
 				templateUrl: "app/employee/emp.tpl.html",
 				controller: "EmpController"
 			})
-			console.log("Routes Configured!");
+			
 	});
 })();

@@ -11,7 +11,7 @@
 
 	    $scope.emp_details = UsersService.add();
 
-    	console.log(UsersService);
+    	console.log($scope.emp_details);
 	
 	});
 
