@@ -1,0 +1,27 @@
+ <div class="titlebar">
+          <h1>Employees</h1>
+          <input type="text" placeholder= "Search employee" ng-model="query" autofocus> 
+          <br><br>
+
+          <label>by:
+                    <select ng-model="empOrder">
+                           <option value="name">Name</option>
+                           <option value="city">City</option>
+                    </select>
+          </label>
+          <br><br> 
+
+         <!--  <input type="radio" name="direction" value="asc" ng-model="directions" checked>
+          Ascending
+
+          <input type="radio" name="direction" value="desc" ng-model="directions">
+          Descending -->
+</div> 
+<ul ng-show="query">
+          <li ng-animate="animate" ng-repeat= "employee in employees | limitTo : 5 | filter: query | orderBy: empOrder">
+                    <a href="#/details/{{employees.indexOf(employee)}}">
+                              <h2><span ng-bind="employee.name"></span></h2>
+                              <h3><span ng-bind="employee.company"></span>&nbsp;from <span ng-bind="employee.city"></span></h3>
+                    </a>
+          </li>
+</ul> 
